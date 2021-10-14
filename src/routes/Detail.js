@@ -1,5 +1,4 @@
 import React from "react";
-import PropTypes from "prop-types";
 import "./Detail.css";
 
 class Detail extends React.Component{
@@ -21,7 +20,9 @@ class Detail extends React.Component{
                             <h3 className="movie_title">{location.state.title}</h3>
                             <h5 className="movie_year">{location.state.year}</h5>
                             <ul className="movie_genre">
-                                <li className="genres">{location.state.genres}</li>
+                                {location.state.genres.map((genres, index) =>
+                                    <li key={index} className="genres">{genres}</li>
+                                )}
                             </ul>
                         </div>
                         <div className="movie_summary">{location.state.summary}</div>

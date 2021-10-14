@@ -42,11 +42,9 @@
 .detail_inner .movie_genre .genres{
     float:left;
     padding:3px 5px;
+    border:1px solid #000;
     border-radius:100px;
     font-size:12px;
-    font-weight:700;
-    color:#fff;
-    background:rgb(5, 11, 98)
 }
 
 .detail_inner .movie_summary{
