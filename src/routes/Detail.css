@@ -1,0 +1,87 @@
+.detail_inner{
+    position:relative;
+    padding:70px 0;
+}
+
+.movie_top:after{
+    content:'';
+    display:table;
+    clear:both;
+}
+
+.detail_inner .movie_img{
+    width:400px;
+    margin: 0 auto;
+}
+
+.detail_inner .movie_img img{
+    width:100%;
+}
+
+.detail_inner .movie_title{
+    margin:10px 0 5px;
+    font-size:30px;
+    text-align:center;
+    letter-spacing:-0.03em;
+}
+
+.detail_inner .movie_year{
+    margin-bottom:10px;
+    font-size:20px;
+    letter-spacing:-0.05em;
+    text-align:center;
+    opacity:0.5;
+}
+
+.detail_inner .movie_genre:after{
+    content:'';
+    display:table;
+    clear:both;
+}
+
+.detail_inner .movie_genre .genres{
+    float:left;
+    padding:3px 5px;
+    border-radius:100px;
+    font-size:12px;
+    font-weight:700;
+    color:#fff;
+    background:rgb(5, 11, 98)
+}
+
+.detail_inner .movie_summary{
+    margin:10px 0 100px;
+    font-size:17px;
+}
+
+.detail_inner .content > .movie{
+    width:100%;
+    max-height:700px;
+    min-height:300px;
+}
+
+@media screen and (max-width:768px){
+    
+}
+
+@media screen and (max-width:640px) {
+    .detail_inner .movie_img{
+        float:left;
+        width:100px;
+        margin-right:20px;
+    }
+    .detail_inner .movie_title{
+        float:left;
+        width:calc(100% - 120px);
+        text-align:initial;
+    }
+    .detail_inner .movie_year{
+        float:left;
+        width:calc(100% - 120px);
+        text-align:initial;
+    }
+    .detail_inner .movie_genre{
+        float:left;
+
+    }
+}

@@ -1,0 +1,128 @@
+/* PC 기준 1024px */
+.movies::after{
+    content:'';
+    display:table;
+    clear:both;
+}
+
+.movie_cont{
+    position:relative;
+    width:48%;
+    padding:30px;
+    border:1px solid #000;
+    border-radius:10px;
+    margin-bottom:50px;
+    background:#fff;
+    box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25), 0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
+}
+
+.movie_cont:nth-child(2n){
+    float:right;
+    margin-right:0;
+}
+
+.movie_cont a{
+    position:relative;
+    top:-50px;
+    display:block;
+    max-width:120px;
+}
+
+.movie_cont a img{
+    width:100%;
+    box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25), 0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
+}
+
+.movie_cont .movie_title{
+    width:calc(100% - 1em);
+    overflow:hidden;
+    position:relative;
+    line-height:1.28em;
+    height:1.28em;
+    margin-right:-1em;
+    padding-right:1em;
+}
+
+.movie_cont .movie_title:before{
+    content:'...';
+    position:absolute;
+    right:0;
+    bottom:0;
+}
+
+.movie_cont .movie_title:after{
+    content:'';
+    position:absolute;
+    right:0;
+    width:1em;
+    height:1em;
+    margin-top:0.2em;
+    background:#fff;
+}
+
+.movie_cont .movie_year{
+    margin-top:3px;
+    opacity:0.5;
+}
+
+.movie_cont .movie_genres::after{
+    content:'';
+    display:table;
+    clear:both;
+}
+
+.movie_cont .movie_genres{
+    overflow:hidden;
+    height:1.25em;
+    margin:5px 0;
+}
+
+.movie_cont .movie_genres .genres_genre{
+    float:left;
+    border:1px solid #000;
+    border-radius:10px;
+    margin-right:10px;
+    padding:3px 5px;
+    font-size:12px;
+}
+
+.movie_cont .movie_summary{
+    width:calc(100% - 1em);
+    overflow:hidden;
+    position:relative;
+    line-height:1.2em;
+    height:2.5em;
+    margin-right:-1em;
+    padding-right:1em;
+}
+
+.movie_cont .movie_summary:before{
+    content:'...';
+    position:absolute;
+    right:5px;
+    bottom:2px;
+}
+
+.movie_cont .movie_summary:after{
+    content:'';
+    position:absolute;
+    right:0;
+    width:1em;
+    height:1em;
+    margin-top:0.2em;
+    background:#fff;
+}
+
+/* 태블릿 기준 768px */
+@media screen and (max-width:768px) {
+    
+}
+
+/* 모바일 기준 640px */
+@media screen and (max-width:640px) {
+    .movies{padding-bottom:50px;}
+
+    .movie{width:100%;margin-right:0;}
+
+    .movie a{max-width:150px;}
+}

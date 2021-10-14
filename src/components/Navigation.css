@@ -1,0 +1,53 @@
+.navi{
+    position:absolute;
+    top:50px;
+    left:50px;
+    padding:10px;
+    border:1px solid #000;
+    border-radius:10px;
+    text-align:center;
+    background:#fff;
+    z-index:100;
+}
+
+.navi a{
+    display:block;
+    padding:10px;
+    font-size:20px;
+    font-weight:600;
+    text-decoration:none;
+    color:#000;
+}
+
+.navi a:first-child{
+    border-bottom:1px solid #000;
+}
+
+@media screen and (max-width:640px){
+    .navi{
+        position:fixed;
+        top:auto;
+        bottom:0;
+        left:0;
+        width:100%;
+        border:0;
+        border-top:1px solid #000;
+        border-radius:0;;
+    }
+
+    .navi:after{
+        content:'';
+        display:table;
+        clear:both;
+    }
+
+    .navi a{
+        float:left;
+        width:50%;
+    }
+    
+    .navi a:first-child{
+        border-bottom:0;
+        border-right:1px solid #000;
+    }
+}

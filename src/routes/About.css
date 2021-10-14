@@ -1,0 +1,8 @@
+.about_container{
+    padding:30px 10px 0;
+    text-align:center;
+}
+
+.about_container span:first-child{
+    display:block;
+}
